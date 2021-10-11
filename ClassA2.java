@@ -1,28 +1,38 @@
 package introToOOP;
 
-public class ClassA2 {
+class ClassA2 {
 
-    //Task25:Create 3 different constructors of a class A. Create 3 objects of Class A in class B
-    //and use the 3 different constructors when creating each of the objects of class A in class B
-    String vegetableType;
-    int calories;
-    boolean carbohydrates;
+    //Task 26 Encapsulation:You are to create 3 variables for a "square shape" class which will be "class A",
+    //shape sides (number of sides of the shape), shape length and shape breadth.
+    // From your knowledge of encapsulation, create getters and setters for length and breadth
+//variables and create only a getter for shape side(this is because we don't want anyone setting the
+    //sides of a square. the sides of the square must and always will be 4). Create another class "B",
+    //set the values of length and breadth. Get the value of the length and breadth and calculate the area.
+//print out your final calculation like this. "The area of a square of length: {put the value of
+//the length} and breadth {put the value of the breadth} is {put the value of the area u calculated}"
+    private int shapeSides = 4;
+    private int shapeLength;
+    private int shapeBreath;
 
-    public ClassA2(String vegetableType){
-        this.vegetableType=vegetableType;
-
-    }
-    public ClassA2(String vegetableType, int calories){
-        this.calories=calories;
-
-    }
-    public ClassA2(String vegetableType, int calories, boolean carbohydrates){
-        this.carbohydrates= carbohydrates;
+    public int getShapeSides() {
+        return shapeSides;
     }
 
+    public int getShapeLength() {
+        return shapeLength;
+    }
 
-    public void printVegetable(){
-        System.out.println(calories);
+    public void setShapeLength(int shapeLength) {
+        this.shapeLength = shapeLength;
+    }
 
+    public int getShapeBreath() {
+        return shapeBreath;
+    }
+
+    public void setShapeBreath(int shapeBreath) {
+        this.shapeBreath = shapeBreath;
     }
 }
+
+
